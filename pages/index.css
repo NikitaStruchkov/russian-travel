@@ -1,0 +1,58 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/root/root.css);
+
+
+.header { 
+    margin: 28px 48px 0;
+    width: 1184px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__logo {
+    width: 176px;
+    height: 52px;
+}
+
+.header__lang-link {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.75rem;
+    color: #FFF
+}
+
+.header__lang-link: :visited {
+    text-decoration: underline;
+}
+
+.header__lang-link:hover {
+    opacity: .5;
+    transition-duration: .5s;
+
+}
+
+.lead {
+    margin: 56px auto 0;
+}
+/* title and sub */
+.lead__title {
+    margin: 0;
+    font-size: 96px;
+    line-height: 6.25rem;
+    color: #FFF
+}
+
+.lead__subtitle {
+    margin: 0;
+    font-size: 30px;
+    line-height: 2.25rem;
+    color: #FFF
+}
+
+/* картинка */
+.lead__image {
+    width: 984px;
+    height: 615px;
+    overflow: hidden;
+}
