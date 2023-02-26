@@ -1,10 +1,11 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/root/root.css);
+@import url(../vendor/fonts/fonts.css);
 
 
 .header { 
     margin: 28px 48px 0;
-    width: 1184px;
+    max-width: 1184px;
     display: flex;
     justify-content: space-between;
 
@@ -15,11 +16,19 @@
     height: 52px;
 }
 
+.header__lang-links {
+    display: flex;
+    
+}
+
 .header__lang-link {
+    font-family: 'Inter';
+    font-style: normal;
     text-decoration: none;
     font-size: 24px;
     line-height: 1.75rem;
-    color: #FFF
+    color: #FFF;
+    list-style: none;
 }
 
 .header__lang-link: :visited {
@@ -34,25 +43,54 @@
 
 .lead {
     margin: 56px auto 0;
+    max-width: 984px;
+
 }
 /* title and sub */
 .lead__title {
-    margin: 0;
+    margin: 0 auto 32px;
+    font-family: 'Inter';
+    font-style: normal;
     font-size: 96px;
     line-height: 6.25rem;
-    color: #FFF
+    color: #FFF;
+    width: 720px;
+    min-height: 200px;
+    text-align: center;
+    
 }
 
 .lead__subtitle {
-    margin: 0;
+    margin: 0 auto 64px;
+    font-family: 'Inter';
+    font-style: normal;
     font-size: 30px;
     line-height: 2.25rem;
-    color: #FFF
+    color: #FFF;
+    width: 640px;
+    min-height: 72x;
+    text-align: center;
 }
 
 /* картинка */
+
+.lead__figure {
+    margin: 0;
+    width: 100%;
+
+}
+
 .lead__image {
-    width: 984px;
+    max-width: 100%;
     height: 615px;
     overflow: hidden;
+}
+
+.lead__caption {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 10px;
+    line-height: .875rem;
+    color: #FFF;
+    text-transform: uppercase;
 }
