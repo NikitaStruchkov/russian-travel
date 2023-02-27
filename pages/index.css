@@ -2,12 +2,23 @@
 @import url(../blocks/root/root.css);
 @import url(../vendor/fonts/fonts.css);
 
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
 
+}
+
+
+/* header  */
 .header { 
-    margin: 28px 48px 0;
     max-width: 1184px;
     display: flex;
     justify-content: space-between;
+
+}
+
+.container__header {
+    margin: 28px 48px 56px;
 
 }
 
@@ -17,7 +28,12 @@
 }
 
 .header__lang-links {
+    width: 74px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -27,11 +43,12 @@
     text-decoration: none;
     font-size: 24px;
     line-height: 1.75rem;
+    font-weight: 400;
     color: #FFF;
     list-style: none;
 }
 
-.header__lang-link: :visited {
+.ru {
     text-decoration: underline;
 }
 
@@ -41,8 +58,12 @@
 
 }
 
+
+
+
+/* lead */
 .lead {
-    margin: 56px auto 0;
+    margin: 0 auto ;
     max-width: 984px;
 
 }
@@ -53,6 +74,7 @@
     font-style: normal;
     font-size: 96px;
     line-height: 6.25rem;
+    font-weight: 900;
     color: #FFF;
     width: 720px;
     min-height: 200px;
@@ -66,6 +88,7 @@
     font-style: normal;
     font-size: 30px;
     line-height: 2.25rem;
+    font-weight: 400;
     color: #FFF;
     width: 640px;
     min-height: 72x;
@@ -91,6 +114,75 @@
     font-style: normal;
     font-size: 10px;
     line-height: .875rem;
+    font-weight: 400;
     color: #FFF;
     text-transform: uppercase;
+}
+
+/* intro */
+.intro {
+    max-width: 54%;
+    color: #FFF;
+}
+
+.container__intro {
+    margin: 92px 148px;
+
+}
+
+.intro__title {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 54px;
+    line-height: 3.625rem;
+    font-weight: 900;
+
+}
+
+.intro__text {
+    margin: 40px 0 33px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.625rem;
+    font-weight: 400;
+    
+}
+
+.intro__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+.intro__list_bold {
+    font-size: 12px;
+    line-height: 1.125rem;
+    font-weight: 700;
+
+}
+
+/* photo-grid */
+
+.photo-grid {
+    margin: 0 auto;
+    width: 1184px;
+    height: 671px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 16px;
+    
+}
+
+
+.photo-grid__item {
+    height: 213px;
+    object-fit: cover;
 }
