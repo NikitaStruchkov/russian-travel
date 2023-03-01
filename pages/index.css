@@ -8,7 +8,6 @@
 
 }
 
-
 /* header  */
 .header { 
     max-width: 1184px;
@@ -64,7 +63,7 @@
 /* lead */
 .lead {
     margin: 0 auto ;
-    max-width: 984px;
+    width: 984px;
 
 }
 /* title and sub */
@@ -110,7 +109,7 @@
 }
 
 .lead__caption {
-    font-family: 'Inter';
+    font-family: 'Inter, Arial, sans-serif';
     font-style: normal;
     font-size: 10px;
     line-height: .875rem;
@@ -252,6 +251,13 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.375rem;
+
+}
+
+.place__link:hover {
+opacity: .5;
+transition-duration: .5s;
+
 }
 
 .place__paragraphs {
@@ -259,6 +265,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 26px;
+
 
 }
 
@@ -270,3 +277,101 @@
     font-size: 18px;
     line-height: 1.813rem;
 }
+
+/* cover */
+
+.cover {
+    margin: 0 auto;
+    width: 92.5%;
+    position: relative;
+    color: #FFF;   
+    min-height: 740px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.cover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;    
+    height: 100%;
+    background-color: #2A2C2F;
+    opacity: .5;    
+    z-index: -1;
+    transition: opacity;
+}
+.cover:hover:before {
+    opacity: .8;
+    transition-duration: .5s;
+}
+
+.section__title {
+    margin: 0;
+    width: 47.3%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 4.75rem;
+    text-align: center;
+
+}
+.section__subtitle {
+    margin: 32px 0 0;
+    width: 30.4%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.375rem;
+    text-align: center;
+
+}
+
+.cover__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -2;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+
+.cover__overlay {
+    
+}
+
+/* 
+background-image: url(../../../dev/russian-travel/images/cover-trains.jpg);
+background-size: cover; 
+background-position: center;
+background-repeat: no-repeat;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+object-fit: cover;
+overflow: hidden;
+z-index: -2;
+max-width: 100%;
+height: 100%;
+width: 100%;
+} */ 
