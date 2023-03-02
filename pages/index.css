@@ -37,12 +37,10 @@
 }
 
 .header__lang-link {
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Inter Regular', 'Arial', sans-serif;
     text-decoration: none;
     font-size: 24px;
     line-height: 1.75rem;
-    font-weight: 400;
     color: #FFF;
     list-style: none;
 }
@@ -69,11 +67,9 @@
 /* title and sub */
 .lead__title {
     margin: 0 auto 32px;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Inter Black', 'Arial', sans-serif;
     font-size: 96px;
     line-height: 6.25rem;
-    font-weight: 900;
     color: #FFF;
     width: 720px;
     min-height: 200px;
@@ -83,14 +79,11 @@
 
 .lead__subtitle {
     margin: 0 auto 64px;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Inter Regular', 'Arial', sans-serif;
     font-size: 30px;
     line-height: 2.25rem;
-    font-weight: 400;
     color: #FFF;
     width: 640px;
-    min-height: 72x;
     text-align: center;
 }
 
@@ -109,11 +102,9 @@
 }
 
 .lead__caption {
-    font-family: 'Inter, Arial, sans-serif';
-    font-style: normal;
+    font-family: 'Inter Regular', 'Arial', sans-serif;
     font-size: 10px;
     line-height: .875rem;
-    font-weight: 400;
     color: #FFF;
     text-transform: uppercase;
 }
@@ -131,21 +122,17 @@
 
 .intro__title {
     margin: 0;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Inter Black', 'Arial', sans-serif;
     font-size: 54px;
     line-height: 3.625rem;
-    font-weight: 900;
 
 }
 
 .intro__text {
     margin: 40px 0 33px;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Inter Regular', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 1.625rem;
-    font-weight: 400;
     
 }
 
@@ -153,17 +140,16 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Inter Regular', 'Arial', sans-serif;
     font-size: 12px;
     line-height: 1.125rem;
-    font-weight: 400;
+    
 }
 
 .intro__list_bold {
+    font-family: 'Inter Bold', 'Arial', sans-serif;
     font-size: 12px;
     line-height: 1.125rem;
-    font-weight: 700;
 
 }
 
@@ -209,9 +195,7 @@
 }
 .place__title {
     margin: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
+    font-family: 'Inter Black', 'Arial', sans-serif;
     font-size: 72px;
     line-height: 4.75rem;
     width: 460px;
@@ -237,18 +221,14 @@
 .place__url-heading {
     margin: 0;
     padding-bottom: 12px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Inter Regular', 'Arial', sans-serif;
     font-size: 12px;
     line-height: 0.75rem;
 }
 
 .place__link {
     color: #FFF;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Inter Regular', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 1.375rem;
 
@@ -271,9 +251,7 @@ transition-duration: .5s;
 
 .place__paragraph {
     margin: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Inter Regular', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 1.813rem;
 }
@@ -281,6 +259,10 @@ transition-duration: .5s;
 /* cover */
 
 .cover {
+    background-image: url(../images/cover-trains.jpg); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0 auto;
     width: 92.5%;
     position: relative;
@@ -305,7 +287,7 @@ transition-duration: .5s;
     width: 100%;    
     height: 100%;
     background-color: #2A2C2F;
-    opacity: .5;    
+    opacity: .3;    
     z-index: -1;
     transition: opacity;
 }
@@ -314,64 +296,82 @@ transition-duration: .5s;
     transition-duration: .5s;
 }
 
-.section__title {
+.cover__title {
     margin: 0;
     width: 47.3%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
+    font-family: 'Inter Black', 'Arial', sans-serif;
     font-size: 72px;
     line-height: 4.75rem;
     text-align: center;
 
 }
-.section__subtitle {
+.cover__subtitle {
     margin: 32px 0 0;
     width: 30.4%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Inter Regular', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 1.375rem;
     text-align: center;
 
-}
-
-.cover__background {
+} 
+.cover__overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    object-fit: cover;
     overflow: hidden;
-    z-index: -2;
-    max-width: 100%;
+    z-index: 1;
     height: 100%;
     width: 100%;
-    
+    text-decoration: none;
+   
+}
+
+/* footer */
+.footer {
+    width: 92.5%;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
 
 }
 
+.html__footer {
+    margin: 92px auto 24px;
 
-.cover__overlay {
-    
 }
 
-/* 
-background-image: url(../../../dev/russian-travel/images/cover-trains.jpg);
-background-size: cover; 
-background-position: center;
-background-repeat: no-repeat;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-object-fit: cover;
-overflow: hidden;
-z-index: -2;
-max-width: 100%;
-height: 100%;
-width: 100%;
-} */ 
+.footer__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    column-gap: 18px;
+}
+
+.footer__link {
+    margin: 0;
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Inter Regular', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.125;
+
+}
+
+.footer__link:hover {
+    opacity: .5;
+    transition-duration: .5s;
+
+}
+
+.footer__copyright {
+    margin: 0;
+    font-family: 'Inter Regular', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1; 
+    box-sizing: border-box;
+    padding-top: 2px;
+
+}
