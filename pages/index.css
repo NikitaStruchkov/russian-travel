@@ -10,14 +10,14 @@
 
 /* header  */
 .header { 
-    max-width: 1184px;
+    width: 92.5%;
     display: flex;
     justify-content: space-between;
 
 }
 
 .container__header {
-    margin: 28px 48px 56px;
+    margin: 28px auto 56px;
 
 }
 
@@ -56,12 +56,10 @@
 }
 
 
-
-
 /* lead */
 .lead {
     margin: 0 auto ;
-    width: 984px;
+    width: 76.875%;
 
 }
 /* title and sub */
@@ -90,15 +88,14 @@
 /* картинка */
 
 .lead__figure {
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
 
 }
 
 .lead__image {
-    max-width: 100%;
-    height: 615px;
+    width: 100%;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .lead__caption {
@@ -111,7 +108,7 @@
 
 /* intro */
 .intro {
-    max-width: 54%;
+    width: 690px;
     color: #FFF;
 }
 
@@ -156,11 +153,9 @@
 /* photo-grid */
 .photo-grid {
     margin: 0 auto;
-    width: 1184px;
-    height: 671px;
+    width: 92.5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
     gap: 16px;
     
 }
@@ -174,7 +169,7 @@
 /* places */
 .places {
     margin: 0;
-    max-width: 76.875%;
+    width: 76.875%;
     color: #FFF;
 
 }
@@ -230,7 +225,7 @@
     color: #FFF;
     font-family: 'Inter Regular', 'Arial', sans-serif;
     font-size: 18px;
-    line-height: 1.375rem;
+    line-height: 1.375;
 
 }
 
@@ -310,7 +305,7 @@ transition-duration: .5s;
     width: 30.4%;
     font-family: 'Inter Regular', 'Arial', sans-serif;
     font-size: 18px;
-    line-height: 1.375rem;
+    line-height: 1.3752rem;
     text-align: center;
 
 } 
@@ -356,7 +351,7 @@ transition-duration: .5s;
     text-decoration: none;
     font-family: 'Inter Regular', Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.125;
+    line-height: 1.125rem;
 
 }
 
@@ -373,5 +368,43 @@ transition-duration: .5s;
     line-height: 1; 
     box-sizing: border-box;
     padding-top: 2px;
+
+}
+
+
+/* mediaqueries */
+@media  (max-width:1024px) {
+   .lead {
+    width: 90.625%;
+
+   }
+
+    .container__intro {
+        margin-left: 48px;
+    
+    }
+
+    .photo-grid {
+        /* margin: 0 auto; */
+        width: 90.625%;
+        /* height: 671px; */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        
+    }
+
+    .places {
+        width: 90.625%;
+        
+    }
+
+    .cover {
+        width: 100%;
+        
+}
+    .footer {
+        width: 90.625%
+        
+    }
 
 }
