@@ -6,3 +6,19 @@
     align-items: start;
 
 }
+
+@media  (max-width:1024px) {
+    .place__website {
+        width: calc(100% - 440px - 32px); 
+    
+    }
+}
+
+
+@media  (max-width: 767px) {
+    .place__website {
+        margin: 0 auto;
+        width: calc(100% - 16px*2);
+        
+    }
+}

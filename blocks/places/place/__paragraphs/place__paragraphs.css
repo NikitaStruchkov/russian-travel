@@ -4,4 +4,33 @@
     flex-direction: column;
     row-gap: 26px;
 
+
+}
+@media  (max-width: 1024px) {
+    .place__paragraphs {
+        width: calc(100% - 440px - 32px);
+        row-gap: 27px;
+    
+    }
+}
+@media  (max-width: 1023px) {
+    .place__paragraphs {
+        width: calc(100% - 380px - 32px);
+        
+    }
+}
+
+@media  (max-width: 768px) {
+    .place__paragraphs {
+        width: calc(100% - 340px - 28px);
+        row-gap: 25px;
+    
+    }
+}
+
+@media  (max-width: 767px) {
+    .place__paragraphs {
+        margin: 0 auto;
+        width: calc(100% - 16px*2);
+    }
 }

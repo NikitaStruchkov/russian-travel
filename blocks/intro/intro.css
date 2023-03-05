@@ -3,3 +3,17 @@
     color: #FFF;
     
 }
+
+@media  (max-width: 768px) {
+    .intro {
+        width: 720px;
+    
+    }
+}
+
+@media  (max-width: 767px) {
+    .intro {
+        width: calc(100% - 16px*2);
+    
+    }
+}

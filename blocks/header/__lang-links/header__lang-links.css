@@ -7,3 +7,10 @@
     padding: 0;
     
 }
+
+@media  (max-width: 767px) {
+    .header__lang-links {
+       padding-top: 10px;
+    
+    }
+}

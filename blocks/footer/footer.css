@@ -1,7 +1,25 @@
 .footer {
-    width: 92.5%;
+    width: calc(100% - 48px*2);
     color: #FFF;
     display: flex;
     justify-content: space-between;
 
+}
+
+@media  (max-width: 1023px) {
+    .footer {
+        width: calc(100% - 12px*2);
+        
+    }
+}
+
+@media  (max-width: 768px) {
+    .footer {
+        width: 58.125%;
+        min-height: 310px;
+        flex-direction: column;
+        gap: 48px;
+        
+        
+    }
 }

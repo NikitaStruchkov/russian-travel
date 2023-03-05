@@ -2,3 +2,17 @@
     margin: 92px auto;
     
 }
+
+@media  (max-width: 768px) {
+    .container__places {
+        margin: 88px auto 90px;
+    
+    }
+}
+
+@media  (max-width: 767px) {
+    .container__places {
+        margin: 64px auto 66px;
+    
+    }
+}

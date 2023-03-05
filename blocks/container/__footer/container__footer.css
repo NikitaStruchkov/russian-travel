@@ -2,3 +2,11 @@
     margin: 92px auto 24px;
 
 }
+
+
+@media  (max-width: 767px) {
+    .container__footer {
+        margin: 57px 0 31px 16px;
+        
+    }
+}
