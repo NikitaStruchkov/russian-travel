@@ -18,7 +18,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
     .container__header {
         margin: 16px auto 48px;
     

@@ -10,11 +10,13 @@
 
 .header__lang-link:hover {
     opacity: .5;
-    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+         -o-transition-duration: .5s;
+            transition-duration: .5s;
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
     .header__lang-link {
         font-size: 18px;
         line-height: 1.25rem;

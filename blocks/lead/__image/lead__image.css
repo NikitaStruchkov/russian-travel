@@ -1,11 +1,12 @@
 .lead__image {
     width: 100%;
     overflow: hidden;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
     .lead__image {
         width: 100%;
         

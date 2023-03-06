@@ -10,11 +10,13 @@
 
 .footer__link:hover {
     opacity: .5;
-    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+         -o-transition-duration: .5s;
+            transition-duration: .5s;
 
 }
 
-@media  (max-width: 767px) {
+@media  (max-width: 425px) {
     .footer__link {
         font-size: 24px;
         line-height: 1.5rem;

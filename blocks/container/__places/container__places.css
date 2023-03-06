@@ -10,7 +10,7 @@
     }
 }
 
-@media  (max-width: 767px) {
+@media  (max-width: 425px) {
     .container__places {
         margin: 64px auto 66px;
     

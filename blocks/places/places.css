@@ -27,6 +27,13 @@
 
 @media  (max-width: 767px) {
     .places {
+        max-width: 426px;
+        
+    }
+}
+
+@media  (max-width: 425px) {
+    .places {
         width: 100%;
         
     }

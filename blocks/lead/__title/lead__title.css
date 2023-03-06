@@ -11,6 +11,16 @@
 
 @media (max-width: 767px) {
     .lead__title {
+        margin: 0 auto 24px;
+        width: calc(100% - 16px*2);
+        font-size: 44px;
+        line-height: 3rem;
+ 
+    }
+ }
+
+@media (max-width: 425px) {
+    .lead__title {
         margin: 0 auto 16px;
         width: calc(100% - 16px*2);
         font-size: 40px;

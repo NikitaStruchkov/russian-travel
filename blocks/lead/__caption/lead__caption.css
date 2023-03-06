@@ -14,7 +14,7 @@
     }
  }
 
- @media (max-width: 767px) {
+ @media (max-width: 425px) {
     .lead__caption {
         padding-left: 16px;
     

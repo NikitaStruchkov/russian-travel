@@ -1,6 +1,9 @@
 .place {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 48px 40px;
 
 }
@@ -20,6 +23,13 @@
 }
 
 @media  (max-width: 767px) {
+    .place {
+       width: 100%;
+
+    }
+}
+
+@media  (max-width: 425px) {
     .place { 
         width: 100%;
         gap: 32px;

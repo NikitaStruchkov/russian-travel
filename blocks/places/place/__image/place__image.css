@@ -1,6 +1,7 @@
 .place__image {
     width: 460px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 
 }
 
@@ -31,7 +32,14 @@
 
 @media  (max-width: 767px) {
     .place__image {
-        width: 320px;
+        width: 100%;
+        
+    }
+}
+
+@media  (max-width: 425px) {
+    .place__image {
+        width: 100%;
         
     }
 }

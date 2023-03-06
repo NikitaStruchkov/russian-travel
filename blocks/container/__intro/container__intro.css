@@ -19,6 +19,13 @@
 
 @media  (max-width: 767px) {
     .container__intro {
+        margin: 88px auto;
+    
+    }
+}
+
+@media  (max-width: 425px) {
+    .container__intro {
         margin: 64px 16px;
     
     }
