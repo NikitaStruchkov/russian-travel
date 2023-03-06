@@ -6,7 +6,7 @@
     margin: 0 auto;
     width: 92.5%;
     position: relative;
-    color: #FFF;   
+    color: #FFF;
     min-height: 740px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -35,10 +35,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100%;    
+    width: 100%;
     height: 100%;
     background-color: #2A2C2F;
-    opacity: .3;    
+    opacity: .3; 
     z-index: -1;
     -webkit-transition: opacity;
     -o-transition: opacity;
