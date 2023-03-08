@@ -1,26 +1,15 @@
 .container__header {
-    margin: 28px auto 57px;
-
+  margin: 28px auto 57px;
 }
 
-
-@media (max-width: 1279px)  {
-    .container__header {
-       margin-bottom: 48px;
-
-    }
-}
-
-@media  (max-width:1024px) {
-    .container__header {
-        margin-bottom: 48px;
-
-    }
+@media (max-width: 1279px) {
+  .container__header {
+    margin-bottom: 48px;
+  }
 }
 
 @media (max-width: 425px) {
-    .container__header {
-        margin: 16px auto 48px;
-    
-    }
+  .container__header {
+    margin: 16px auto 48px;
+  }
 }

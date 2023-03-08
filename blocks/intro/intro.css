@@ -1,26 +1,23 @@
 .intro {
-    width: 690px;
-    color: #FFF;
-    
+  max-width: 690px;
+  color: #fff;
 }
 
-@media  (max-width: 768px) {
-    .intro {
-        width: 720px;
-    
-    }
+@media (max-width: 768px) {
+  .intro {
+    max-width: 720px;
+  }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .intro {
         width: calc(100% - 16px*2);
     
     }
-}
+} */
 
-@media  (max-width: 425px) {
-    .intro {
-        width: calc(100% - 16px*2);
-    
-    }
+@media (max-width: 425px) {
+  .intro {
+    width: calc(100% - 16px * 2);
+  }
 }

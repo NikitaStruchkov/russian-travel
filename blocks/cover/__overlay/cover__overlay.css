@@ -1,13 +1,28 @@
 .cover__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 740px;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .cover__overlay {
+      min-height: 640px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover__overlay {
+      min-height: 480px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cover__overlay {
+      min-height: 200px;
+  }
 }
