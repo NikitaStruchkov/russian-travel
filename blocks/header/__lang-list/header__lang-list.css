@@ -1,0 +1,19 @@
+.header__lang-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 425px) {
+  .header__lang-list {
+    padding-top: 10px;
+  }
+}
