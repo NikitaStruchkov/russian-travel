@@ -7,10 +7,11 @@
   line-height: 1;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  text-align: right;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 425px) {
   .footer__copyright {
-    text-align: right;
+    text-align: left;
   }
 }

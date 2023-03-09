@@ -6,13 +6,13 @@
 @media  (max-width: 768px) {
     .container__footer {
         margin: 88px auto 24px;
-    
+
     }
 }
 
 @media  (max-width: 425px) {
     .container__footer {
-        margin: 57px 0 31px 16px;
-        
+        margin: 64px 0 31px 16px;
+
     }
 }
